@@ -1,0 +1,17 @@
+$TTL 1h
+@ IN SOA ns.modeli.jp postmaster.modeli.jp. (
+    2017092901 ; serial
+    1h         ; refresh
+    15m        ; retry
+    1d         ; expire
+    1h         ; minimum
+);
+ 
+@          IN NS ns.modeli.jp.
+ns         IN A  122.103.91.236
+
+@          IN A 122.103.91.236
+
+
+mail  IN A  122.103.91.236
+modeli.jp.      IN      MX 10  mail.modeli.jp.
