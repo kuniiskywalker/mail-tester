@@ -24,6 +24,8 @@ services:
 
   receiver:
     build: ./receiver
+    volumes:
+      - ./mailbox:/var/mail
     ports:
       - "25:25"
       - "110:110"

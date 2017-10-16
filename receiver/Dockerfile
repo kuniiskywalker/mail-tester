@@ -2,9 +2,13 @@ FROM alpine:latest
 
 RUN apk update && apk upgrade
 
-RUN apk add postfix rsyslog && rm -rf /var/cache/apk/*
+RUN apk add postfix mailx rsyslog && rm -rf /var/cache/apk/*
 
 ADD main.cf /etc/postfix/main.cf
+
+RUN newaliases
+
+WORKDIR /var/mail
 
 EXPOSE 25
 
