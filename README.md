@@ -29,7 +29,7 @@ Send mail
 --------------------
 
 ```
-docker-compose exec sender mail root@kunii.local
+docker-compose exec sender mail root@hoge.local -f root@fuga.local
 ```
 
 Incoming mail confirmation

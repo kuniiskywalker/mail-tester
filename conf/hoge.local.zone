@@ -1,5 +1,5 @@
 $TTL 1h
-@ IN SOA ns.kunii.local postmaster.kunii.local. (
+@ IN SOA ns.hoge.local postmaster.hoge.local. (
     2017092901 ; serial
     1h         ; refresh
     15m        ; retry
@@ -9,10 +9,9 @@ $TTL 1h
 
 @          IN A 10.5.0.5
 
-@          IN NS ns.kunii.local.
+@          IN NS ns.hoge.local.
 ns         IN A  10.5.0.4
 
 mail  IN A  10.5.0.5
-kunii.local.      IN      MX 10  mail.kunii.local.
-
+hoge.local.      IN      MX 10  mail.hoge.local.
 

@@ -1,6 +1,8 @@
 FROM alpine:latest
 
-RUN apk add bind --no-cache
+RUN apk update && apk upgrade
+
+RUN apk add bind tcpdump && rm -rf /var/cache/apk/*
 
 EXPOSE 53/udp
 
