@@ -1,4 +1,4 @@
-google-hack-tool
+incoming-mail-tester
 ====================
 Tool to verify receipt of mail.
 
