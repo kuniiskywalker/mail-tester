@@ -28,6 +28,8 @@ docker-compose up -d
 Send mail
 --------------------
 
+Exec mail command.
+
 ```
 docker-compose exec sender mail root@hoge.local -f root@fuga.local
 ```

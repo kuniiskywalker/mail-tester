@@ -694,5 +694,4 @@ smtpd_recipient_restrictions =
     reject_unauth_destination
     check_policy_service unix:private/policy-spf
 
-policy_time_limit = 3600
-
+smtputf8_enable = no

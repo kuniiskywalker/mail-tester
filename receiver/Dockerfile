@@ -44,5 +44,5 @@ WORKDIR /var/mail
 
 EXPOSE 25
 
-CMD ["sh", "-c", "rsyslogd; postfix start; tail -f /dev/null;"]
+CMD ["sh", "-c", "rsyslogd; postfix start; tail -F /var/log/maillog;"]
 
