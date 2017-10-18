@@ -11,7 +11,7 @@ Build
 docker-compose build
 ```
 
-Generate ndc.key
+Generate rndc.key
 --------------------
 
 ```
