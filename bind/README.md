@@ -1,25 +1,23 @@
+
+
 Build
+-------------------------
+
 ```
-sudo make build
+docker build -t bind .
 ```
 
 Generate rndc.key
+-------------------------
+
 ```
-sudo make keygen
+docker run --rm -v `pwd`/conf:/etc/bind bind rndc-confgen -a -c /etc/bind/rndc.key -u named -r /dev/urandom
 ```
 
 Run
-```
-sudo make run
-```
+-------------------------
 
-Forward DNS
 ```
-nslookup fish.kunii.local {docker vm ip}
-```
-
-Forward MX
-```
-nslookup -type=mx kunii.local 127.0.0.1
+docker run -d -v `pwd`/conf:/etc/bind bind
 ```
 
