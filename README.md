@@ -1,6 +1,7 @@
-incoming-mail-tester
+mail-tester
 ====================
-Tool to verify receipt of mail.
+
+This is a docker environment for sending and receiving mail with bind and postfix.
 
 ![summary](https://github.com/kuniiskywalker/incoming-mail-tester/blob/master/summary.jpg)
 
