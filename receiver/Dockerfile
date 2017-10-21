@@ -46,7 +46,7 @@ RUN newaliases
 RUN adduser -S tester
 
 # Directory where mail addressed to root is created
-# WORKDIR /home/tester/Maildir
+WORKDIR /home/tester/Maildir
 
 EXPOSE 25
 
