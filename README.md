@@ -31,7 +31,7 @@ Send mail
 Exec mail command.
 
 ```
-docker-compose exec sender mail root@hoge.local -f root@fuga.local
+docker-compose exec sender mail tester@hoge.local -f root@fuga.local
 ```
 
 Incoming mail confirmation
@@ -40,6 +40,6 @@ Incoming mail confirmation
 The following is a mail file addressed to root
 
 ```
-mailbox/root
+mailbox/new
 ```
 

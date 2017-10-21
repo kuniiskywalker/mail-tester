@@ -437,7 +437,7 @@ mynetworks = 10.5.0.0/16, 127.0.0.0/8
 # "Maildir/" for qmail-style delivery (the / is required).
 #
 #home_mailbox = Mailbox
-#home_mailbox = Maildir/
+home_mailbox = Maildir/
  
 # The mail_spool_directory parameter specifies the directory where
 # UNIX-style mailboxes are kept. The default setting depends on the

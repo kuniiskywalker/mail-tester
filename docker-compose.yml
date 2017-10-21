@@ -25,7 +25,7 @@ services:
   receiver:
     build: ./receiver
     volumes:
-      - ./mailbox:/var/mail
+      - ./mailbox:/home/tester/Maildir
     ports:
       - "25:25"
       - "110:110"
